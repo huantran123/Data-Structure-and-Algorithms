@@ -36,7 +36,7 @@ Every time you are using a tree or converting something into atree, consider rec
 2. Each instance of the subproblem is identical in nature
 3. The solutions of each subproblem can be combined to solve the problem at hand
 
-### Devide and Conquer
+#### Devide and Conquer
 
 ## Resources
 
