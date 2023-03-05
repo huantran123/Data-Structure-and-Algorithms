@@ -28,6 +28,16 @@ O(n!) – Factorial
 ### 2. Big Θ – Average/Tight Case
 ### 3. Big Ω – Best Case
 
+## Recursion
+### When to use recursion
+#### Tree
+Every time you are using a tree or converting something into atree, consider recursion
+1. Divided into a number of subproblems that are smaller instances of the same problem
+2. Each instance of the subproblem is identical in nature
+3. The solutions of each subproblem can be combined to solve the problem at hand
+
+### Devide and Conquer
+
 ## Resources
 
 - [Big-O Algorithm Complexity Cheat Sheet (Know Thy Complexities!) @ericdrowell](https://www.bigocheatsheet.com/ "Big O Cheat Sheet")
