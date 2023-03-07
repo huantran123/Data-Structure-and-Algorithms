@@ -11,7 +11,7 @@ const findFactorialRecursive = (num) => {
 }
 
 const findFactorialIterative = (num) => {
-  if (num === 0) {
+  if (num <= 1) {
     return 1;
   }
   let result = 1;

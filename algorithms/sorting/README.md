@@ -1,12 +1,12 @@
 # Sorting Algorithms
 
 ## Bubble Sort
+### Code
+  [bubbleSort.js](./bubbleSort.js)
 ### Time Comlexity & Space Complexity
 #### Time Complexity
-| Best | Average | Worst |
-|------|---------|-------|
-| O(n) | O(n^2)  | O(n^2)|
+  | Best | Average | Worst |
+  |------|---------|-------|
+  | O(n) | O(n^2)  | O(n^2)|
 #### Space Complexity
-- Worst: O(1)
-### Code
-[bubbleSort.js](./bubbleSort.js)
+  - Worst: O(1)
