@@ -17,8 +17,8 @@ const bubbleSort = (arr) => {
   return arr;
 }
 
-// Time complexity: Worst - O(n^2)
+// Time complexity: O(n^2)
 // Space complexity: O(1)
 
-const arr = [4,23,53,1,64,73,6,57,21,11,9];
-console.log(bubbleSort(arr))
+const arr = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+console.log(bubbleSort(arr)) // [0, 1, 2, 4, 5, 6, 44, 63, 87, 99, 283]
