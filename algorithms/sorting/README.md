@@ -63,6 +63,7 @@
 ## Quick Sort
 - Picks an element as a pivot and partitions the given array around the picked pivot
 - The key process in quickSort is a partition(). The target of partitions is, given an array and an element x of an array as the pivot, put x at its correct position in a sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.
+- Quick sort is usually the fastest on average. But it has the nasty worst case behavior.
 ### Code
   [quickSort.js](./quickSort.js)
 ### Time Comlexity & Space Complexity
@@ -72,3 +73,12 @@
   | O(n log(n)) | O(n log(n))  | O(n^2)|
 #### Space Complexity
   - Worst: O(log n)
+
+--------------------------------------
+
+## Which sort is best?
+- ***Insertion sort:*** should be used for small dataset with few items or items are almost sorted.
+- ***Bubble sort:*** should never use, only use for educational purposes.
+- ***Selection sort:*** should never use, only use for educational purposes.
+- ***Merge sort:*** should use for most cases because the speed for every cases is the same (O(n log n)). Use merge sort when worrying about the worst case scenario. However, merge sort is expensive when considering space complexity.
+- ***Quick sort:*** should use for most cases. Quick sort might be better than merge sort, it has the same speed for average case but less space complexity. But be careful about the worst case, if the pivot is not picked properly, it would make the sort really slow.
