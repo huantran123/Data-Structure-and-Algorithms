@@ -133,42 +133,37 @@ class BinarySearchTree {
     }
   }
 
-  breadFirstSearch() {
-    let currentNode = this.root;
-    let list = [];
-    let queue = [];
-
-    queue.push(currentNode);
-
-    while(queue.length > 0) {
-      currentNode = queue.shift();
-      list.push(currentNode.value);
-      if (currentNode.left) {
-        queue.push(currentNode.left)
-      }
-      if (currentNode.right) {
-        queue.push(currentNode.right)
-      }
+  DFSInOrder(currentNode = this.root, list = []) {
+    if (currentNode.left) {
+      list = this.DFSInOrder(currentNode.left, list)
+    }
+    list.push(currentNode.value);
+    if (currentNode.right) {
+      list = this.DFSInOrder(currentNode.right, list)
     }
     return list;
   }
 
-  breadFirstSearchRecursive(queue = [this.root], list = []) {
-    if (!queue.length) {
-      return list;
-    }
-
-    let currentNode = queue.shift()
+  DFSPreOrder(currentNode = this.root, list = []) {
     list.push(currentNode.value);
-
     if (currentNode.left) {
-      queue.push(currentNode.left)
+      list = this.DFSPreOrder(currentNode.left, list)
     }
     if (currentNode.right) {
-      queue.push(currentNode.right)
+      list = this.DFSPreOrder(currentNode.right, list)
     }
+    return list;
+  }
 
-    return this.breadFirstSearchRecursive(queue, list)
+  DFSPostOrder(currentNode = this.root, list = []) {
+    if (currentNode.left) {
+      list = this.DFSPostOrder(currentNode.left, list)
+    }
+    if (currentNode.right) {
+      list = this.DFSPostOrder(currentNode.right, list)
+    }
+    list.push(currentNode.value);
+    return list;
   }
 }
 
@@ -182,8 +177,9 @@ tree.insert(15)
 tree.insert(1)
 // tree.remove(170)
 // JSON.stringify(traverse(tree.root))
-console.log('BFS: ', tree.breadFirstSearch())
-console.log('BFS recursive: ', tree.breadFirstSearchRecursive())
+console.log('DFS InOder: ', tree.DFSInOrder())
+console.log('DFS PreOder: ', tree.DFSPreOrder())
+console.log('DFS PostOder: ', tree.DFSPostOrder())
 
 //     9
 //  4     20
