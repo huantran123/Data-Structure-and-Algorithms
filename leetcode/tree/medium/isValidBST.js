@@ -74,15 +74,17 @@ var checkRightSubTree = function(node, currentNode) {
 
 // Another way:
 
-var isValidBST2 = function(node, min, max) {
-  // Base case
-  if (!node.val) {
+var isValidBST2 = function(root, min, max) {
+  // Base case: root is null
+  if (!root) {
     return true;
   }
 
-  if (node.val <= min || node.val >= max) {
+  // If the value of the root >= min or <= max, then return false
+  if (root.val <= min || root.val >= max) {
     return false;
   }
 
-  return isValidBST2(node.left, min, node.val) && isValidBST2(node.right, node.val, max)
+  // Recursively call the function for the left and right subtree
+  return isValidBST2(root.left, min, root.val) && isValidBST2(root.right, root.val, max)
 }

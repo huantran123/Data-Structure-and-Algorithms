@@ -177,9 +177,9 @@ tree.insert(15)
 tree.insert(1)
 // tree.remove(170)
 // JSON.stringify(traverse(tree.root))
-console.log('DFS InOder: ', tree.DFSInOrder())
-console.log('DFS PreOder: ', tree.DFSPreOrder())
-console.log('DFS PostOder: ', tree.DFSPostOrder())
+console.log('DFS InOder: ', tree.DFSInOrder()) // [1, 4, 6, 9, 15, 20, 170]
+console.log('DFS PreOder: ', tree.DFSPreOrder()) // [9, 4, 1, 6, 20, 15, 170]
+console.log('DFS PostOder: ', tree.DFSPostOrder()) // [1, 6, 4, 15, 170, 20, 9]
 
 //     9
 //  4     20

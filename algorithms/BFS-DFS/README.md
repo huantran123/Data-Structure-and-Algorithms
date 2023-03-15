@@ -23,3 +23,14 @@
 
 2. Cons:
   - Can get slow
+
+## DFS
+### InOrder
+- left -> root -> right
+- It is used to give nodes in non-decreasing order
+### PreOrder
+- root -> left -> right
+- It is uses to recreate the tree
+### PostOrder
+- left -> right -> root
+- It is used to delete the tree.
