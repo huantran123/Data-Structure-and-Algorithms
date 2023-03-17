@@ -9,33 +9,29 @@ var productExceptSelf = function(nums) {
   for (let i = 0; i < length; i++) {
       // If the current element is the first element, the left product of it is 1
       if (i === 0) {
-          leftSide.push(1);
+          leftSide[i] = 1;
       // The left product of other current element = prev element * left product of the prev element
       } else {
-          leftSide.push(nums[i-1] * leftSide[i-1])
+          leftSide[i] = nums[i-1] * leftSide[i-1];
       }
   }
   // => leftSide = [1,1,2,6]
 
-  // Set a counter and let it increment to get the index of the rightSide array
-  // I traverse backwards but I store right product forwards (push), so I need a counter to store the index of the rightSide array. Unshift works but make time O(n^2)
-  let counter = 0;
+  // Calculate the product of the left side of the current element
   for (let i = length - 1; i >= 0; i--) {
       // If the current element is the last element, the right product of it is 1
       if (i === length - 1) {
-          rightSide.push(1);
+          rightSide[i] = 1;
       // The right product of other current element = next element * right product of the next element
       } else {
-          rightSide.push(nums[i+1] * rightSide[counter++])
+          rightSide[i] = nums[i+1] * rightSide[i+1]
       }
   }
-  // => rightSide = [1,4,12,24]
+  // => rightSide = [24,12,4,1]
 
-  // Product at each index = left (forwards ->) * right (backwards <-)
+  // Product at each index = left * right
   for (let i = 0; i < length; i++) {
-      answer.push(leftSide[i] * rightSide[length - i - 1])
+      answer[i] = leftSide[i] * rightSide[i]
   }
-
-
   return answer;
 };
