@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
+// https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 
 var rotatedMin = function(nums) {
   let start = 0;
