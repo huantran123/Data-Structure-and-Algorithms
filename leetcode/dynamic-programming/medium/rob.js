@@ -4,18 +4,18 @@
 var rob1 = function(nums) {
   let cache = {};
   let robFunction = (index) => {
-      if (cache[index] !== undefined) {
-          return cache[index]
-      } else {
-          if (index >= nums.length) {
-              return 0;
-          }
-
-          let max = Math.max(nums[index] + robFunction(index + 2), nums[index] + robFunction(index + 3))
-          cache[index] = max;
-          return max;
+    if (cache[index] !== undefined) {
+      return cache[index]
+    } else {
+      if (index >= nums.length) {
+          return 0;
       }
-  }
+
+      let max = Math.max(nums[index] + robFunction(index + 2), nums[index] + robFunction(index + 3))
+      cache[index] = max;
+      return max;
+    }
+  }Require
 
   return Math.max(robFunction(0), robFunction(1))
 };
