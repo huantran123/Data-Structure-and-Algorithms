@@ -43,3 +43,4 @@
   | Name | Code | Video Solution | Notes |
   | --- | --- | --- | --- |
   | [House Robber](https://leetcode.com/problems/house-robber/) | [rob.js](./medium/rob.js) | https://youtu.be/73r3KWiEvyk | for each num, get max of prev subarr, or num + prev subarr not including last element, store results of prev, and prev not including last element |
+  | [Coin Change](https://leetcode.com/problems/coin-change/) | [coinChange.js](./medium/coinChange.js) | https://youtu.be/H9bfqozjoqs | top-down: recursive dfs, for amount, branch for each coin, cache to store prev coin_count for each amount; bottom-up: compute coins for amount = 1, up until n, using for each coin (amount - coin), cache prev values |

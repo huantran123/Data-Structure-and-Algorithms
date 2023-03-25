@@ -15,14 +15,37 @@ var rob1 = function(nums) {
       cache[index] = max;
       return max;
     }
-  }Require
+  }
 
   return Math.max(robFunction(0), robFunction(1))
 };
 
+// Using recursion and memoization (better way)
+var rob2 = function(nums) {
+  const cache = {};
+
+  const dfs = (index) => {
+    if (index >= nums.length) {
+      return 0;
+    }
+
+    if (cache[index] !== undefined) {
+      return cache[index];
+    } else {
+      // Consider between (dropping current house to rob adjacent house) AND (robbing current house then continue robbing the following house),
+      // which option gives the max value
+      const amount = Math.max(dfs(index + 1), nums[index] + dfs(index + 2))
+      cache[index] = amount;
+      return amount;
+    }
+  }
+
+  return dfs(0)
+}
+
 
 // Using for loop
-var rob2 = function(nums) {
+var rob3 = function(nums) {
   const table = new Array(nums.length + 2)
 
   table[nums.length + 0] = 0
@@ -40,3 +63,4 @@ var rob2 = function(nums) {
 
 console.log(rob1([3,1,2,5,2,1,3])) //12
 console.log(rob2([3,1,2,5,2,1,3])) //12
+console.log(rob3([3,1,2,5,2,1,3])) //12
