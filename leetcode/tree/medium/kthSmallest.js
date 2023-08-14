@@ -13,7 +13,7 @@
  * @param {number} k
  * @return {number}
  */
-var kthSmallest = function(root, k) {
+let kthSmallest = function(root, k) {
   // defined an array to store all node values in ascending order
   const sortedValues = []
 

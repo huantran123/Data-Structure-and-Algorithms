@@ -13,7 +13,7 @@
  * @return {boolean}
  */
 
-var isValidBST = function(root) {
+let isValidBST = function(root) {
   let queue = [];
   queue.push(root);
 

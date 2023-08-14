@@ -12,7 +12,7 @@
  * @param {number} n
  * @return {TreeNode[]}
  */
-var generateTrees = function(n) {
+let generateTrees = function(n) {
   if (n === 0) return []
 
   // recursion function to generate trees array
