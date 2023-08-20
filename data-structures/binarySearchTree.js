@@ -320,6 +320,44 @@ class BinarySearchTree {
     // if node has right child, continue to search the right
     return this.findMax(node.right)
   }
+
+  // print all data of tree in order from max to min
+  printMaxToMin() {
+    // create an array to store values from max to min
+    const result = []
+    // recursive function to traverse inorder reversely
+    const getMaxToMin = (node) => {
+      // explore the right child first
+      node.right && getMaxToMin(node.right)
+      // then add current node data to the result
+      result.push(node.data)
+      // then explore the left child
+      node.left && getMaxToMin(node.left)
+    }
+    // start generate max to min array, start from the root
+    getMaxToMin(this.root)
+    // join all data in array together, separated by ', ' and print out
+    console.log(result.join(', '))
+  }
+
+  // print all data of tree in order from min to max
+  printMinToMax() {
+    // create an array to store values from min to max
+    const result = []
+    // recursive function to traverse inorder
+    const getMinToMax = (node) => {
+      // explore the left child first
+      node.left && getMinToMax(node.left)
+      // then add current node data to the result
+      result.push(node.data)
+      // then explore the right child
+      node.right && getMinToMax(node.right)
+    }
+    // generate min to max array, start from the root
+    getMinToMax(this.root)
+    // join all data in array together, separated by ', ' and print out
+    console.log(result.join(', '))
+  }
 }
 
 const bst = new BinarySearchTree()
@@ -349,5 +387,7 @@ bst.remove(15)
 console.log('Tree after after remove 15: ', JSON.stringify(bst, null, 4))
 console.log('Min: ', bst.findMin())
 console.log('Max: ', bst.findMax())
+bst.printMaxToMin()
+bst.printMinToMax()
 
 
