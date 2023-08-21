@@ -12,7 +12,8 @@
  * @param {TreeNode} root
  * @return {void} Do not return anything, modify root in-place instead.
  */
-var recoverTree = function(root) {
+
+let recoverTree = function(root) {
   // array of nodes in ascending order
   const nodes = []
 
