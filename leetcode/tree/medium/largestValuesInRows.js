@@ -13,7 +13,7 @@
  * @return {number[]}
  */
 
-var largestValues = function(root) {
+let largestValues = function(root) {
   // create an array of arrays to store nodes on each row
   let rows = []
 
