@@ -319,3 +319,29 @@ const tree6 = buildBinaryTreeFromArray(array6)
 console.log(biggestSumFromRootToLeaf(tree6))    // 10 + 15 + 19 + 21 + 20 = 85
 
 console.log('\n=======================================================\n')
+
+// DFS traversal using Recursion
+
+const dfsRecursion = (root, path = []) => {
+  path.push(root.data)
+  // Base case: current node is leaf node
+  if (!root.left && !root.right) {
+    console.log(path)
+  }
+  // Traverse right
+  root.right && dfsRecursion(root.right, [...path])
+  // Traverse left
+  root.left && dfsRecursion(root.left, [...path])
+}
+
+console.log('Depth First Search using Recursion: ')
+const array7 = [6, 4, 8, 1, 5, null, 10]
+const tree7 = buildBinaryTreeFromArray(array7)
+console.log('Small tree DFS:')
+dfsRecursion(tree7.root)    // 6,8,10 | 6,4,5 | 6,4,1
+const array8 = [10,5,15,4,7,12,19,3,null,6,9,11,14,16,21,1,null,null,null,null,null,8,null,null,null,13,null,null,18,20,null,null,2]
+const tree8 = buildBinaryTreeFromArray(array8)
+console.log('Big tree DFS:')
+dfsRecursion(tree8.root)
+
+console.log('\n=======================================================\n')

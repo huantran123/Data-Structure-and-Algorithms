@@ -7,7 +7,9 @@
   | [Two Sum](https://leetcode.com/problems/two-sum/) | [twoSum.js](./easy/twoSum.js) | https://youtu.be/KLlXCFG5TnA | use hash map to instantly check for difference value, map will add index of last occurrence of a num, don’t use same element twice; |
   | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [maxProfit.js](./easy/maxProfit.js) | https://youtu.be/1pkOgXD63yU | find local min and search for local max, sliding window; |
   | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [containsDuplicate.js](./easy/containsDuplicate.js) | https://youtu.be/3OamzN90kPg | hashset to get unique values in array, to check for duplicates easily |
-
+  | [Missing Number](https://leetcode.com/problems/missing-number/) | [missingNumber.js](./easy/missingNumber.js) | | Use Binary Search algorithm |
+  | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | [targetIndices.js](./easy/targetIndices.js) | | Use Binary Search algorithm |
+  | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | [countNegatives.js](./easy/countNegatives.js) | | Use Binary Search algorithm |
 
 ## Medium
 
@@ -20,4 +22,6 @@
   | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [rotatedSearch.js](./medium/rotatedSearch.js) | https://youtu.be/U8XENwh8Oy8 | at most two sorted halfs, mid will be apart of left sorted or right sorted, if target is in range of sorted portion then search it, otherwise search other half |
   | [3Sum](https://leetcode.com/problems/3sum/) | [threeSum.js](./medium/threeSum.js) | https://youtu.be/jzZsG8n2R9A | sort input, for each first element, find next two where -a = b+c, if a = prevA, skip a, if b=prevB skip b to elim duplicates; to find b,c use two pointers, left/right on remaining list; |
   | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [maxWaterContainer.js](./medium/maxWaterContainer.js) | https://youtu.be/UuiTKBwPgAo | shrinking window, left/right initially at endpoints, shift the pointer with min height; |
+  | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | [peakIndexInMountainArray.js](./medium/peakIndexInMountainArray.js) |  | Use Binary Search algorithm |
+  | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/) | [singleNonDuplicate.js](./medium/singleNonDuplicate.js) |  | Use Binary Search algorithm |
 
