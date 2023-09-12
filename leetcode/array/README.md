@@ -10,6 +10,7 @@
   | [Missing Number](https://leetcode.com/problems/missing-number/) | [missingNumber.js](./easy/missingNumber.js) | | Use Binary Search algorithm |
   | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | [targetIndices.js](./easy/targetIndices.js) | | Use Binary Search algorithm |
   | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | [countNegatives.js](./easy/countNegatives.js) | | Use Binary Search algorithm |
+  | [Find Subsequence of Length k with the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) | [maxSubsequence.js](./easy/maxSubsequence.js) | | |
 
 ## Medium
 
@@ -24,4 +25,6 @@
   | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [maxWaterContainer.js](./medium/maxWaterContainer.js) | https://youtu.be/UuiTKBwPgAo | shrinking window, left/right initially at endpoints, shift the pointer with min height; |
   | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | [peakIndexInMountainArray.js](./medium/peakIndexInMountainArray.js) |  | Use Binary Search algorithm |
   | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/) | [singleNonDuplicate.js](./medium/singleNonDuplicate.js) |  | Use Binary Search algorithm |
+  | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [shipWithinDays.js](./medium/shipWithinDays.js) |  | Use Binary Search algorithm |
+  | [Find First and Last positon of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange.js](./medium/searchRange.js) |  | Use Binary Search algorithm |
 
