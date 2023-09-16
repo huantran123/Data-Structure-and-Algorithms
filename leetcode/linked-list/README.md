@@ -15,3 +15,4 @@
   | Name | Code | Video Solution | Notes |
   | --- | --- | --- | --- |
   | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [productExceptSelf.js](./medium/productExceptSelf.js) | https://youtu.be/bNvIQI2wAjk | make two passes, first in-order, second in-reverse, to compute products |
+  | [Sort List](https://leetcode.com/problems/sort-list/) | [sortList.js](./medium/sortList.js) | | use divide & conquer |

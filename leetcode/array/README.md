@@ -11,6 +11,7 @@
   | [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | [targetIndices.js](./easy/targetIndices.js) | | Use Binary Search algorithm |
   | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | [countNegatives.js](./easy/countNegatives.js) | | Use Binary Search algorithm |
   | [Find Subsequence of Length k with the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) | [maxSubsequence.js](./easy/maxSubsequence.js) | | |
+  | [Majority Element](https://leetcode.com/problems/majority-element/) | [majorityElement.js](./easy/majorityElement.js) | | |
 
 ## Medium
 
@@ -27,4 +28,6 @@
   | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/) | [singleNonDuplicate.js](./medium/singleNonDuplicate.js) |  | Use Binary Search algorithm |
   | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [shipWithinDays.js](./medium/shipWithinDays.js) |  | Use Binary Search algorithm |
   | [Find First and Last positon of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange.js](./medium/searchRange.js) |  | Use Binary Search algorithm |
+  | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | [constructMaximumBinaryTree.js](./medium/constructMaximumBinaryTree.js) |  | Use Divide and Conquer algorithm |
+
 
