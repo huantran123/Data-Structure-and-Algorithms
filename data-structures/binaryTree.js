@@ -345,3 +345,35 @@ console.log('Big tree DFS:')
 dfsRecursion(tree8.root)
 
 console.log('\n=======================================================\n')
+
+// Given `sorted array` of integers, find the index of number `65`
+const arr = [1, 2, 4, 7, 9, 15, 21, 23, 34, 42, 48, 59, 60, 65, 70]
+const num = 65
+
+const binarySearch = (arr, num) => {
+  let result = 'does not exist'                     // Time: 1, Space: 1
+  let left = 0                                      // Time: 1, Space: 1
+  let right = arr.length - 1                        // Time: 1, Space: 1
+
+  while(left <= right) {                            // Time: logn (drop half of the array each iteration), Space: 0
+    let mid = Math.ceil((left + right) / 2)         // Time: 1, Space: 1
+
+    // found, stop and return result
+    if(arr[mid] === num) {                          // Time: 1, Space: 0
+      result = mid                                  // Time: 1, Space: 0
+      break                                         // Time: 1, Space: 0
+    // continue with data points on the right
+    } else if(arr[mid] < num) {                     // Time: 1, Space: 0
+      left = mid + 1                                // Time: 1, Space: 0
+    // continue with data points on the left
+    } else if(arr[mid] > num) {                     // Time: 1, Space: 0
+      right = mid - 1                               // Time: 1, Space: 0
+    }
+  }
+
+  return result                                     // Time: 1, Space: 0
+}
+
+// Time complexity: Binary Search drops half data point in each iteration
+// -> Time: O(logn)
+console.log(`index of '${num}':`, find(arr, num))

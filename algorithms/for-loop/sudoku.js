@@ -107,3 +107,4 @@ correctSolutions.forEach((solution, index) => {
   console.log('Solution #', index + 1)
   console.log(solution)
 })
+

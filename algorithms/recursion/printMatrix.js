@@ -1,5 +1,5 @@
 // Given a random 4x4 matrix, print all elements. Row by row and column by column.
-console.log('\n')
+
 const matrix4x4 = [
   [1,2,3,4],
   [5,6,7,8],
@@ -39,4 +39,3 @@ const printMatrixWithRecursion = (matrix, row = 0, col = 0, result = '') => {
 
 console.log('Print 4x4 matrix using Recursion: ')
 console.log(printMatrixWithRecursion(matrix4x4))
-console.log('\n')

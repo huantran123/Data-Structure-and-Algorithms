@@ -12,6 +12,10 @@
   | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | [countNegatives.js](./easy/countNegatives.js) | | Use Binary Search algorithm |
   | [Find Subsequence of Length k with the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) | [maxSubsequence.js](./easy/maxSubsequence.js) | | |
   | [Majority Element](https://leetcode.com/problems/majority-element/) | [majorityElement.js](./easy/majorityElement.js) | | |
+  | [Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [minimumDifference.js](./easy/minimumDifference.js) | | sort the array and use Sliding Window algorithm |
+  | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | [findMaxAverage.js](./easy/findMaxAverage.js) | | use Sliding Window algorithm |
+  | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | [containsNearbyDuplicate.js](./easy/containsNearbyDuplicate.js) | | use Sliding Window algorithm |
+  | [Flood Fill](https://leetcode.com/problems/flood-fill/) | [floodFill.js](./easy/floodFill.js) | | use BFS |
 
 ## Medium
 
@@ -29,5 +33,9 @@
   | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [shipWithinDays.js](./medium/shipWithinDays.js) |  | Use Binary Search algorithm |
   | [Find First and Last positon of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [searchRange.js](./medium/searchRange.js) |  | Use Binary Search algorithm |
   | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | [constructMaximumBinaryTree.js](./medium/constructMaximumBinaryTree.js) |  | Use Divide and Conquer algorithm |
-
+  | [Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/) | [isIdealPermutation.js](./medium/isIdealPermutation.js) |  | Use Divide and Conquer algorithm |
+  | [K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) | [findPairs.js](./medium/findPairs.js) |  | Use Two Pointers algorithm |
+  | [String Compression](https://leetcode.com/problems/string-compression/) | [compress.js](./medium/compress.js) |  | Use Two Pointers algorithm: slow (nail the start of each range) and fast (scan the array until reaching the end of each range) |
+  | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [longestOnes.js](./medium/longestOnes.js) |  | use sliding window |
+  | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [maxAreaOfIsland.js](./medium/maxAreaOfIsland.js) |  | use BFS |
 

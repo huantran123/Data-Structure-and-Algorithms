@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/container-with-most-water/
 
+// Two Pointers Algo
 // Time: O(n)
 var maxWaterContainer = function(height) {
   let left = 0, right = height.length - 1;
