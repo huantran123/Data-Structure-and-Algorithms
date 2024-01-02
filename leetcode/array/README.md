@@ -16,6 +16,7 @@
   | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | [findMaxAverage.js](./easy/findMaxAverage.js) | | use Sliding Window algorithm |
   | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | [containsNearbyDuplicate.js](./easy/containsNearbyDuplicate.js) | | use Sliding Window algorithm |
   | [Flood Fill](https://leetcode.com/problems/flood-fill/) | [floodFill.js](./easy/floodFill.js) | | use BFS |
+  | [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [validPath.js](./easy/validPath.js) | | construct a graph to connect all nodes and use DFS to traverse |
 
 ## Medium
 
@@ -38,4 +39,21 @@
   | [String Compression](https://leetcode.com/problems/string-compression/) | [compress.js](./medium/compress.js) |  | Use Two Pointers algorithm: slow (nail the start of each range) and fast (scan the array until reaching the end of each range) |
   | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [longestOnes.js](./medium/longestOnes.js) |  | use sliding window |
   | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [maxAreaOfIsland.js](./medium/maxAreaOfIsland.js) |  | use BFS |
+  | [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | [countServers.js](./medium/countServers.js) |  | use BFS |
+  | [Minesweeper](https://leetcode.com/problems/minesweeper/) | [mineSweeper.js](./medium/mineSweeper.js) |  | use BFS |
+  | [Reachable Nodes With Restrictions](https://leetcode.com/problems/reachable-nodes-with-restrictions/) | [reachableNodes.js](./medium/reachableNodes.js) |  | construct a graph to connect all nodes and use DFS to traverse |
+  | [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [canVisitAllRooms.js](./medium/canVisitAllRooms.js) |  | use DFS |
+  | [Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | [minReorder.js](./medium/minReorder.js) |  | use DFS |
+  | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | [allPathsSourceTarget.js](./medium/allPathsSourceTarget.js) |  | use DFS recursion |
+  | [Course Schedule](https://leetcode.com/problems/course-schedule/) | [canFinish.js](./medium/canFinish.js) |  | use DFS recursion |
+  | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [flatten.js](./medium/flatten.js) |  | use DFS recursion |
+  | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [findOrder.js](./medium/findOrder.js) |  | use Topological Sort (DFS) |
+  | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | [networkDelayTime.js](./medium/networkDelayTime.js) |  | Use Bellman-Ford |
+  | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [findCheapestPrice.js](./medium/findCheapestPrice.js) |  | Use Bellman-Ford |
+  | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) | [minimumEffortPath.js](./medium/minimumEffortPath.js) |  | Use Bellman-Ford |
+  | [Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/) | [maxProbability.js](./medium/maxProbability.js) |  | Use Bellman-Ford |
+  | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | [findTheCity.js](./medium/findTheCity.js) |  | Use Bellman-Ford |
 
+## Hard
+
+  | [Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/) | [minCost.js](./hard/minCost.js) |  | Use Bellman-Ford |
