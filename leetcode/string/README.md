@@ -17,3 +17,7 @@
   |[Decode String](https://leetcode.com/problems/decode-string/)|[decodeString.js](./medium/decodeString.js)| | update string from the right side first, and repeatedly going backwards |
   |[Expressive Words](https://leetcode.com/problems/expressive-words/)|[expressiveWords.js](./medium/expressiveWords.js)| | use Two Pointer Algorithm |
   |[Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/)|[maxConsecutiveAnswers.js](./medium/maxConsecutiveAnswers.js)| | use Sliding Window algorithm |
+  |[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[letterCombinations.js](./medium/letterCombinations.js)| | use Backtracking |
+  |[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)|[restoreIpAddresses.js](./medium/restoreIpAddresses.js)| | use Backtracking |
+  |[Construct Smallest Number From DI String](https://leetcode.com/problems/construct-smallest-number-from-di-string/)|[smallestNumber.js](./medium/smallestNumber.js)| | use Backtracking |
+  |[Maximum Length of a Concatenated String with Unique Characters](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/)|[maxLength.js](./medium/maxLength.js)| | use Backtracking |

@@ -53,7 +53,21 @@
   | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) | [minimumEffortPath.js](./medium/minimumEffortPath.js) |  | Use Bellman-Ford |
   | [Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/) | [maxProbability.js](./medium/maxProbability.js) |  | Use Bellman-Ford |
   | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | [findTheCity.js](./medium/findTheCity.js) |  | Use Bellman-Ford |
+  | [Permutations](https://leetcode.com/problems/permutations/) | [permute.js](./medium/permute.js) |  | Use Backtracking |
+  | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [permuteUnique.js](./medium/permuteUnique.js) |  | Use Backtracking |
+  | [Subsets](https://leetcode.com/problems/subsets/) | [subsets.js](./medium/subsets.js) |  | Use Backtracking |
+  | [Subsets II](https://leetcode.com/problems/subsets-ii/) | [subsetsWithDup.js](./medium/subsetsWithDup.js) |  | Use Backtracking |
+  | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [combinationSum.js](./medium/combinationSum.js) |  | Use Backtracking |
+  | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [combinationSum2.js](./medium/combinationSum2.js) |  | Use Backtracking |
+  | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | [combinationSum3.js](./medium/combinationSum3.js) |  | Use Backtracking |
+  | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | [partition.js](./medium/partition.js) |  | Use Backtracking |
+  | [Path with Maximum Gold](https://leetcode.com/problems/path-with-maximum-gold/) | [getMaximumGold.js](./medium/getMaximumGold.js) |  | Use Backtracking |
+  | [Word Search](https://leetcode.com/problems/word-search/) | [wordSearch.js](./medium/wordSearch.js) |  | Use Backtracking |
 
 ## Hard
 
   | [Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/) | [minCost.js](./hard/minCost.js) |  | Use Bellman-Ford |
+  | [N-Queens](https://leetcode.com/problems/n-queens/) | [solveNQueens.js](./hard/solveNQueens.js) |  | Use Backtracking |
+  | [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | [totalNQueens.js](./hard/totalNQueens.js) |  | Use Backtracking |
+  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | [solveSudoku.js](./hard/solveSudoku.js) |  | Use Backtracking |
+

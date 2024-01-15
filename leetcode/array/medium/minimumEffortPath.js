@@ -61,3 +61,5 @@ let minimumEffortPath = function(heights) {
 
   return result[rows - 1][cols - 1]
 };
+
+
